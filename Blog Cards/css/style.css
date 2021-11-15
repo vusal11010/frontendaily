@@ -50,9 +50,7 @@ body main.blog-cards section.card:nth-child(2) {
 
 body main.blog-cards section.card .cover {
   border-radius: 10px 10px 0 0;
-  opacity: .75;
-  background: -webkit-gradient(linear, left top, left bottom, from(#17213F), to(#440049));
-  background: linear-gradient(#17213F, #440049);
+  opacity: 1;
 }
 
 body main.blog-cards section.card .content {
