@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  padding: 16px;
+  background: #F1F6FF;
+}
+
+body section {
+  margin: 16px;
+}
+
+body section.component-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section.component-1 input {
+  display: none;
+}
+
+body section.component-1 input:checked + label {
+  color: #fff;
+  background: #272E69;
+}
+
+body section.component-1 input:checked + label .heading .downloads svg .icon-star-path {
+  fill: #fff;
+}
+
+body section.component-1 input:checked + label .tag {
+  background: #1A2261;
+}
+
+body section.component-1 label {
+  width: 668px;
+  padding: 40px 50px;
+  border-radius: 15px;
+  color: #181D39;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: 300ms color ease-in-out;
+  transition: 300ms color ease-in-out;
+}
+
+body section.component-1 label:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+body section.component-1 label .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+body section.component-1 label .heading h2 {
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+body section.component-1 label .heading h2 .version {
+  font-size: 16px;
+  opacity: .5;
+}
+
+body section.component-1 label .heading .downloads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section.component-1 label .heading .downloads svg {
+  margin-right: 12px;
+}
+
+body section.component-1 label .heading .downloads svg .icon-star-path {
+  fill: #272E69;
+  -webkit-transition: 300ms fill ease-in-out;
+  transition: 300ms fill ease-in-out;
+}
+
+body section.component-1 label .heading .downloads span {
+  font-size: 18px;
+}
+
+body section.component-1 label p {
+  width: 379px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+body section.component-1 label .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section.component-1 label .tags .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 29px;
+  padding: 0 10px;
+  border-radius: 16.5px;
+  font-size: 14px;
+  background: #F1F6FF;
+}
+
+body section.component-1 label .tags .tag:not(:last-child) {
+  margin-right: 5px;
+}
+
+body section.component-2 {
+  width: 641px;
+  padding: 50px;
+  border-radius: 15px;
+  color: #181D39;
+  background: #fff;
+}
+
+body section.component-2 h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+body section.component-2 .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+
+body section.component-2 .filter label:not(:last-child) {
+  margin-right: 20px;
+}
+
+body section.component-2 .filter label h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+body section.component-2 .filter label select {
+  width: 154px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 1px solid #CED7E9;
+  background: url(../images/icon-arrow-down.svg) no-repeat calc(100% - 17.5px);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  cursor: pointer;
+}
+
+body section.component-2 ul {
+  margin-bottom: 30px;
+}
+
+body section.component-2 ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 75px;
+  border-radius: 5px;
+  background: #F1F6FF;
+}
+
+body section.component-2 ul li p {
+  font-size: 16px;
+  margin-left: 25px;
+}
+
+body section.component-2 ul li span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background: #fff url(../images/icon-copy.svg) no-repeat center;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+body section.component-2 ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+body section.component-2 a.button {
+  display: inline-block;
+  padding: 25px 35px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  background: #272E69;
+  -webkit-transition: 300ms background-color ease-in-out;
+  transition: 300ms background-color ease-in-out;
+}
+
+body section.component-2 a.button:hover {
+  background: #2d3578;
+}
+/*# sourceMappingURL=style.css.map */
