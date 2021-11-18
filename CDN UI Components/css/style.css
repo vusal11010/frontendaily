@@ -214,6 +214,7 @@ body section.component-2 ul li {
   height: 75px;
   border-radius: 5px;
   background: #F1F6FF;
+  cursor: pointer;
 }
 
 body section.component-2 ul li p {
@@ -227,7 +228,6 @@ body section.component-2 ul li span {
   height: 50px;
   border-radius: 5px;
   background: #fff url(../images/icon-copy.svg) no-repeat center;
-  cursor: pointer;
   margin-right: 12px;
 }
 
@@ -250,5 +250,29 @@ body section.component-2 a.button {
 
 body section.component-2 a.button:hover {
   background: #2d3578;
+}
+
+body .copied {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #272E69;
+  position: fixed;
+  top: -6px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 200ms ease-out all;
+  transition: 200ms ease-out all;
+}
+
+body .copied.active {
+  top: 12px;
+  visibility: visible;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
