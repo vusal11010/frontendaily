@@ -90,6 +90,7 @@ body {
             border: 1px solid #A9B2CA;
             font-size: 16px;
             margin-bottom: 50px;
+            resize: none;
 
             &:focus {
                 border-color: $link-color;

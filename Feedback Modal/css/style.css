@@ -107,6 +107,7 @@ body .modal textarea {
   border: 1px solid #A9B2CA;
   font-size: 16px;
   margin-bottom: 50px;
+  resize: none;
 }
 
 body .modal textarea:focus {
