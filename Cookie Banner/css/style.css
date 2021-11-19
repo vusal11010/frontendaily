@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  font-family: 'Mulish', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 16px;
+  background: #F7F8FC;
+}
+
+body section {
+  margin: 16px;
+}
+
+body section.component-1 {
+  width: 410px;
+  padding: 35px 35px 25px 35px;
+  border-radius: 5px;
+  background: #10182F;
+}
+
+body section.component-1 p {
+  width: 330px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+body section.component-1 p a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+body section.component-1 p a:hover {
+  text-decoration: none;
+}
+
+body section.component-1 .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section.component-1 .buttons a {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+body section.component-1 .buttons a.decline {
+  color: #fff;
+}
+
+body section.component-1 .buttons a.decline:hover {
+  text-decoration: underline;
+}
+
+body section.component-1 .buttons a.allow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #DAE1F5;
+  border-radius: 5px;
+  color: #545D7A;
+  background: #fff;
+  margin-left: 60px;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+body section.component-1 .buttons a.allow:hover {
+  color: #10182F;
+}
+
+body section.component-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 410px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 36px 0;
+  border-radius: 5px;
+  background: #fff;
+}
+
+body section.component-2 p {
+  width: 330px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #10182F;
+  margin: 25px 0 35px 0;
+}
+
+body section.component-2 p a {
+  color: #10182F;
+  text-decoration: underline;
+}
+
+body section.component-2 a.button {
+  padding: 15px 35px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #10182F;
+}
+
+body section.component-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 731px;
+  height: 145px;
+  background: #fff;
+}
+
+body section.component-3 .cookie {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+body section.component-3 p {
+  width: 330px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #10182F;
+  margin-right: 121px;
+}
+
+body section.component-3 p a {
+  color: #10182F;
+  text-decoration: underline;
+}
+
+body section.component-3 a.button {
+  padding: 15px 35px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #10182F;
+}
+/*# sourceMappingURL=style.css.map */
