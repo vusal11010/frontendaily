@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 16px;
+  background: #F7F9FD;
+}
+
+body section {
+  background: #fff;
+  margin: 16px;
+  position: relative;
+}
+
+body section .heading {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .heading h1 {
+  width: 284px;
+  font-size: 14px;
+  text-align: center;
+  color: #202842;
+}
+
+body section .points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+body section .points input {
+  display: none;
+}
+
+body section .points input:checked + label {
+  color: #fff;
+  background: #1A2B63;
+}
+
+body section .points label {
+  padding: 7px 13px;
+  border-radius: 5px;
+  border: 1px solid #DCDFF1;
+  color: #202842;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 8px;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+body section .points label:last-child {
+  margin-right: 0;
+}
+
+body section .points label:hover {
+  color: #fff;
+  background: #1A2B63;
+}
+
+body section .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 26px;
+}
+
+body section .details span {
+  font-size: 12px;
+  color: #5D698D;
+}
+
+body section .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .buttons a {
+  text-decoration: none;
+}
+
+body section .buttons a.skip {
+  font-size: 14px;
+  color: #5D698D;
+}
+
+body section .buttons a.submit {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background: #3457DC;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+body section .buttons a.submit:hover {
+  background: #254ad7;
+}
+
+body section .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+body section .emojis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .emojis input {
+  display: none;
+}
+
+body section .emojis input:checked + label {
+  -webkit-box-shadow: 0 5px 15px -5px rgba(148, 165, 228, 0.7);
+          box-shadow: 0 5px 15px -5px rgba(148, 165, 228, 0.7);
+}
+
+body section .emojis label {
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+body section .emojis label:hover {
+  -webkit-box-shadow: 0 5px 15px -5px rgba(148, 165, 228, 0.7);
+          box-shadow: 0 5px 15px -5px rgba(148, 165, 228, 0.7);
+}
+
+body section h3 {
+  font-size: 12px;
+  color: #202842;
+  margin-bottom: 6px;
+}
+
+body section textarea {
+  width: 100%;
+  height: 71px;
+  padding: 10px 15px 45px;
+  border-radius: 5px;
+  border: 1px solid #DCDFF1;
+  color: #5D698D;
+  font-size: 12px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  resize: none;
+}
+
+body section textarea::-webkit-input-placeholder {
+  color: #5D698D;
+  font-size: 12px;
+}
+
+body section textarea:-ms-input-placeholder {
+  color: #5D698D;
+  font-size: 12px;
+}
+
+body section textarea::-ms-input-placeholder {
+  color: #5D698D;
+  font-size: 12px;
+}
+
+body section textarea::placeholder {
+  color: #5D698D;
+  font-size: 12px;
+}
+
+body section.component-1 {
+  width: 526px;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+body section.component-1 h1 {
+  margin: 5px 0 35px 0;
+}
+
+body section.component-2 {
+  width: 380px;
+  padding: 35px 25px 45px;
+  border-radius: 5px;
+}
+
+body section.component-2 .heading {
+  margin-bottom: 25px;
+}
+
+body section.component-2 .emojis {
+  margin-bottom: 30px;
+}
+
+body section.component-3 {
+  width: 380px;
+  padding: 35px 25px 25px;
+  border-radius: 5px;
+}
+
+body section.component-3 .heading, body section.component-3 .emojis {
+  margin-bottom: 25px;
+}
+
+body section.component-4 {
+  width: 526px;
+  padding: 30px 25px 25px;
+  border-radius: 5px;
+}
+
+body section.component-4 .heading {
+  margin-bottom: 35px;
+}
+/*# sourceMappingURL=style.css.map */
