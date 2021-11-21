@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
 
+$regular-color: #545D7A;
+$bold-color: #222C46;
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +21,145 @@ body {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100vh;
+    padding: 75px 100px 65px;
     border-top: 5px solid #10182F;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        // margin-bottom: 80px;
+
+        .logo {
+            a {
+                display: inline-block;
+                font-size: 26px;
+                font-weight: 800;
+                color: #10182f;
+            }
+        }
+
+        .menus {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .menu {
+                &:not(:last-child) {
+                    margin-right: 90px;
+                }
+
+                h3 {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: $bold-color;
+                    margin-bottom: 25px;
+                }
+
+                ul {
+                    li {
+                        &:not(:last-child) {
+                            margin-bottom: 12px;
+                        }
+
+                        a {
+                            display: inline-block;
+                            color: $regular-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p.copyright {
+            font-size: 14px;
+            color: $regular-color;
+        }
+
+        .cookies {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                li {
+                    &:not(:last-child) {
+                        margin-right: 65px;
+                    }
+
+                    a {
+                        display: inline-block;
+                        font-size: 14px;
+                        color: $regular-color;
+                    }
+                }
+            }
+        }
+
+        .socials {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+
+                display: inline-block;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                opacity: .55;
+                transition: 300ms all ease-in-out;
+
+                svg {
+                    path {        
+                        transition: 300ms fill ease-in-out;
+                    }
+                }
+
+                &:hover {
+                    background: rgba(16,24,47,.05);
+                    opacity: 1;
+
+                    &.twitter-logo {
+                        svg path {
+                            fill: #00acee;
+                        }
+                    }
+
+                    &.github-logo {
+                        svg path {
+                            fill: #171515;
+                        }
+                    }
+
+                    &.facebook-logo {
+                        svg path {
+                            fill: #3b5998;
+                        }
+                    }
+
+                    &.dribbble-logo {
+                        svg path {
+                            fill: #ea4c89;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -18,7 +18,163 @@ body {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 100vh;
+  padding: 75px 100px 65px;
   border-top: 5px solid #10182F;
+}
+
+footer .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .top .logo a {
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 800;
+  color: #10182f;
+}
+
+footer .top .menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .top .menus .menu:not(:last-child) {
+  margin-right: 90px;
+}
+
+footer .top .menus .menu h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #222C46;
+  margin-bottom: 25px;
+}
+
+footer .top .menus .menu ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+footer .top .menus .menu ul li a {
+  display: inline-block;
+  color: #545D7A;
+}
+
+footer .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .bottom p.copyright {
+  font-size: 14px;
+  color: #545D7A;
+}
+
+footer .bottom .cookies ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .bottom .cookies ul li:not(:last-child) {
+  margin-right: 65px;
+}
+
+footer .bottom .cookies ul li a {
+  display: inline-block;
+  font-size: 14px;
+  color: #545D7A;
+}
+
+footer .bottom .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .bottom .socials a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  opacity: .55;
+  -webkit-transition: 300ms all ease-in-out;
+  transition: 300ms all ease-in-out;
+}
+
+footer .bottom .socials a:not(:last-child) {
+  margin-right: 15px;
+}
+
+footer .bottom .socials a svg path {
+  -webkit-transition: 300ms fill ease-in-out;
+  transition: 300ms fill ease-in-out;
+}
+
+footer .bottom .socials a:hover {
+  background: rgba(16, 24, 47, 0.05);
+  opacity: 1;
+}
+
+footer .bottom .socials a:hover.twitter-logo svg path {
+  fill: #00acee;
+}
+
+footer .bottom .socials a:hover.github-logo svg path {
+  fill: #171515;
+}
+
+footer .bottom .socials a:hover.facebook-logo svg path {
+  fill: #3b5998;
+}
+
+footer .bottom .socials a:hover.dribbble-logo svg path {
+  fill: #ea4c89;
 }
 /*# sourceMappingURL=style.css.map */
