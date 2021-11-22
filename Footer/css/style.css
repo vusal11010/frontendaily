@@ -82,6 +82,30 @@ footer .top .menus .menu ul li:not(:last-child) {
 footer .top .menus .menu ul li a {
   display: inline-block;
   color: #545D7A;
+  position: relative;
+  -webkit-transition: 300ms color ease-out;
+  transition: 300ms color ease-out;
+}
+
+footer .top .menus .menu ul li a::after {
+  content: '';
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background-color: rgba(84, 93, 122, 0.1);
+  z-index: -1;
+  -webkit-transition: 300ms width ease-out;
+  transition: 300ms width ease-out;
+}
+
+footer .top .menus .menu ul li a:hover {
+  color: #222C46;
+}
+
+footer .top .menus .menu ul li a:hover::after {
+  width: 100%;
 }
 
 footer .bottom {
@@ -158,7 +182,7 @@ footer .bottom .socials a svg path {
 }
 
 footer .bottom .socials a:hover {
-  background: rgba(16, 24, 47, 0.05);
+  background-color: rgba(84, 93, 122, 0.1);
   opacity: 1;
 }
 
